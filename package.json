@@ -3,5 +3,11 @@
   "version": "0.0.1",
   "author": "bigpws123@sina.com",
   "description": "a javascript library about math formular based on jquery",
-  "keywords":["jquery","javascript"]
+  "keywords": [
+    "jquery",
+    "javascript"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
 }

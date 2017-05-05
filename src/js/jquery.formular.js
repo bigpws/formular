@@ -1,5 +1,6 @@
 /**
  * 变量 紫色，数学函数蓝色
+ * @todo vars
  */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
