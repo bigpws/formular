@@ -2,14 +2,56 @@
 <head>
     <meta charset="utf-8" />
     <title>demo</title>
+    <style type="text/css">
+        ul.formular_result{
+            border:1px solid #c5c5c5;
+            background: #fff;
+            color: #333;
+            font-size: 1em;
+            list-style: none;
+            padding:0;
+            margin: 0;
+            display: none;
+            position: absolute;
+            cursor:default;
+            z-index:9999;
+        }
+        ul.formular_result li{
+            cursor: pointer;
+        }
+        ul.formular_result li.blue{
+            background:blue;
+            color:#fff;
+        }
+        .formular_explain{
+
+        }
+        .formular{
+            height:160px;
+            width: 30%;
+            outline:1px solid #c5c5c5;
+            padding:2px;
+            background:#ddd;
+        }
+    </style>
 </head>
 <body>
-    <div id="formular_text"></div>
-    <textarea id="formular"></textarea>
+
+
+    <div class="formular_explain"></div>
+    <div class="formular" id="formular" contenteditable="true"></div>
+
     <script language="javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script language="javascript" src="../src/js/jquery.formular.js"></script>
     <script language="javascript">
-        $('#formular').formular();
+        $('#formular').formular({
+            accessVars:{
+                '93_23_44_fe':'铁离子',
+                '93_23_44_ca':'钙离子',
+                '93_23_44_mg':'镁离子',
+            },
+            explain_panel:'.formular_explain'
+        });
     </script>
 </body>
 </html>
